@@ -70,3 +70,5 @@ demo/
 1. `launch.json` ファイルを開く
 2. 各設定の `"args"` 配列を編集
 3. 保存後、実行設定を選択して実行
+
+This line was added by Gemini for a test PR.
