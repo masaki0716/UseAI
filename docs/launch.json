@@ -1,0 +1,61 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Calculator - 加算",
+            "request": "launch",
+            "mainClass": "Calculator",
+            "args": ["10", "+", "5"],
+        },
+        {
+            "type": "java",
+            "name": "Calculator - 減算",
+            "request": "launch",
+            "mainClass": "Calculator",
+            "args": ["20", "-", "8"],
+        },
+        {
+            "type": "java",
+            "name": "Calculator - 乗算",
+            "request": "launch",
+            "mainClass": "Calculator",
+            "args": ["6", "*", "7"],
+        },
+        {
+            "type": "java",
+            "name": "Calculator - 除算",
+            "request": "launch",
+            "mainClass": "Calculator",
+            "args": ["15", "/", "3"],
+        },
+        {
+            "type": "java",
+            "name": "Calculator - ゼロ除算",
+            "request": "launch",
+            "mainClass": "Calculator",
+            "args": ["10", "/", "0"],
+        },
+        {
+            "type": "java",
+            "name": "Calculator - 無効な数値",
+            "request": "launch",
+            "mainClass": "Calculator",
+            "args": ["abc", "+", "5"],
+        },
+        {
+            "type": "java",
+            "name": "Calculator - 無効な演算子",
+            "request": "launch",
+            "mainClass": "Calculator",
+            "args": ["10", "%", "5"],
+        },
+        {
+            "type": "java",
+            "name": "Calculator - 引数不足",
+            "request": "launch",
+            "mainClass": "Calculator",
+            "args": ["10"],
+        }
+    ]
+}
