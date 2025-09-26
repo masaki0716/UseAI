@@ -1,10 +1,13 @@
+// 計算処理を行うサービスクラス
 public class CalculationService {
     private InputValidator validator;
     
+    // コンストラクタ
     public CalculationService() {
         this.validator = new InputValidator();
     }
     
+    // 計算を実行するメソッド
     public double calculate(double num1, String operator, double num2) {
         switch (operator) {
             case "+":
@@ -23,8 +26,14 @@ public class CalculationService {
         }
     }
     
+    // 入力検証器を取得するメソッド
     public InputValidator getValidator() {
         return validator;
+    }
+    
+    // 入力検証器を設定するメソッド
+    public void setValidator(InputValidator validator) {
+        this.validator = validator;
     }
 }
 

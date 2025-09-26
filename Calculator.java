@@ -1,3 +1,4 @@
+// 計算機のメインクラス
 public class Calculator {
     public static void main(String[] args) {
         if (args.length < 3) {
@@ -10,17 +11,21 @@ public class Calculator {
             String operator = args[1];
             double num2 = Double.parseDouble(args[2]);
             
-            Calculator calc = new Calculator();
-            double result = calc.calculate(num1, operator, num2);
+            // 計算サービスを使って計算を実行
+            CalculationService service = new CalculationService();
+            double result = service.calculate(num1, operator, num2);
             System.out.println("結果: " + result);
             
         } catch (NumberFormatException e) {
-            System.out.println("エラー: 数値を入力してください");
+            System.out.println("エラー: 数値以外の文字が入力されました。数字を入力してください。");
+        } catch (ArithmeticException e) {
+            System.out.println("エラー: " + e.getMessage());
         } catch (Exception e) {
             System.out.println("エラー: " + e.getMessage());
         }
     }
     
+    // このメソッドは不要（重複している）
     public double calculate(double num1, String operator, double num2) {
         switch (operator) {
             case "+":
